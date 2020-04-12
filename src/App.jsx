@@ -1,9 +1,8 @@
 import React from "react";
-import TaskList from "./components/TaskList";
+import TodoList from "./components/TodoList";
 /* Styling */
 import "./App.css";
 import { ThemeProvider, Heading, Text, Box, Flex } from "@chakra-ui/core";
-import TaskEntry from "./components/TaskEntry";
 // import customTheme from "./theme";
 
 function App() {
@@ -19,10 +18,7 @@ function App() {
                 >
                     To-Do List
                 </Heading>
-                <Flex className="App-Content" h="80%" flexDir="column">
-                    <TaskList />
-                    <TaskEntry />
-                </Flex>
+                <TodoList />
             </Box>
             <Flex className="Footer">
                 <footer>
