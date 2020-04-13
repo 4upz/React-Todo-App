@@ -1,6 +1,6 @@
 # Simple React ToDo App
 
-Simple ToDo app made with React for the purpose of better understanding React components and state changes. This type of project is typically a rite of passage when it comes to learning React and is very common, but I wanted to create my own version without consulting any existing tutorials or walkthroughs (outside of how to deploy the app).This was also to explore how to implement UI libraries and their components with React. For this project, the AMAZING Chakra UI was used (https://chakra-ui.com/).
+Simple ToDo app made with React for the purpose of better understanding React components and state changes. This type of project is typically a rite of passage when it comes to learning React and is very common, but I wanted to create my own version without consulting any existing tutorials or walkthroughs (outside of how to deploy the app). This was also to explore how to implement UI libraries and their components with React. For this project, the AMAZING Chakra UI was used (https://chakra-ui.com/).
 
 ## Hosted App
 
