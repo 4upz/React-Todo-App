@@ -1,3 +1,20 @@
+# Simple React ToDo App
+
+Simple ToDo app made with React for the purpose of better understanding React components and state changes. This type of project is typically a rite of passage when it comes to learning React and is very common, but I wanted to create my own version without consulting any existing tutorials or walkthroughs (outside of how to deploy the app).This was also to explore how to implement UI libraries and their components with React. For this project, the AMAZING Chakra UI was used (https://chakra-ui.com/).
+
+## Hosted App
+
+https://4upz.github.io/React-Todo-App/
+
+## Commands used to publish react files to github pages:
+
+git remote set-url origin https://4upz.github.io/React-Todo-App/
+
+npm run build
+
+npm run deploy
+
+--------------------------------------------------------------------------------------------------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
