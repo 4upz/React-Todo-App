@@ -1,5 +1,5 @@
 import React from "react";
-import TodoList from "./components/TodoList";
+import TodoApp from "./components/TodoApp";
 /* Styling */
 import "./App.css";
 import { ThemeProvider, Heading, Text, Box, Flex } from "@chakra-ui/core";
@@ -18,7 +18,7 @@ function App() {
                 >
                     To-Do List
                 </Heading>
-                <TodoList />
+                <TodoApp />
             </Box>
             <Flex className="Footer">
                 <footer>

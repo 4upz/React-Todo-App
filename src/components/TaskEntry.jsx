@@ -1,66 +1,9 @@
 import React, { Component } from "react";
-import {
-    Flex,
-    FormControl,
-    Input,
-    FormLabel,
-    List,
-    ListItem,
-} from "@chakra-ui/core";
-import Task from "./Task";
+import { FormControl, Input, FormLabel } from "@chakra-ui/core";
 
 const enterKey = 13;
 
-export default class TodoList extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            tasks: [],
-            newTask: "",
-        };
-    }
-
-    // Adds a new Task to this component
-    addNewTask(task) {
-        // Adds task to the beginning of the list (Because we will display the newest tasks at the top of the list)
-        let currentList = this.state.tasks;
-        currentList.push(
-            <ListItem key={currentList.length}>
-                <Task taskName={task} />
-            </ListItem>
-        );
-        this.setState({ tasks: currentList });
-    }
-
-    render() {
-        return (
-            <Flex className="App-Content" h="80%" flexDir="column">
-                <TaskList tasks={this.state.tasks} />
-                <TaskEntry
-                    newTask={this.state.newTask}
-                    addNewTask={this.addNewTask.bind(this)}
-                />
-            </Flex>
-        );
-    }
-}
-
-class TaskList extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { tasks: props.tasks };
-    }
-
-    render() {
-        return (
-            <List justifyContent="center" alignItems="flex-start" spacing={3}>
-                {this.state.tasks}
-            </List>
-        );
-    }
-}
-
-class TaskEntry extends Component {
+export default class TaskEntry extends Component {
     // Constructor for Controlled Form
     constructor(props) {
         super(props);
