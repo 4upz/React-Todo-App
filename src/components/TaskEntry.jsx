@@ -8,18 +8,18 @@ export default class TaskEntry extends Component {
     constructor(props) {
         super(props);
         this.state = { newTask: "" };
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.submitNewTask = this.submitNewTask.bind(this);
+        this.handleInput = this.handleInput.bind(this);
         this.handleKeyUp = this.handleKeyUp.bind(this);
     }
 
     // Keeps up with any value changes of the input so that it is reflected when the component is rendered via its state
-    handleChange(event) {
+    handleInput(event) {
         this.setState({ newTask: event.target.value });
     }
 
     // Handles the submission of the input based on the current value stored in its state
-    handleSubmit(event) {
+    submitNewTask(event) {
         event.preventDefault();
         this.props.addNewTask(this.state.newTask);
         // Make the text form empty again
@@ -29,7 +29,7 @@ export default class TaskEntry extends Component {
     // Check for when the 'enter' key is pressed
     handleKeyUp(event) {
         if (event.keyCode === enterKey) {
-            this.handleSubmit(event);
+            this.submitNewTask(event);
         }
     }
 
@@ -43,7 +43,7 @@ export default class TaskEntry extends Component {
                 <Input
                     type="text"
                     value={this.state.newTask}
-                    onChange={this.handleChange}
+                    onChange={this.handleInput}
                     px="0"
                     w="90%"
                     mx="5%"

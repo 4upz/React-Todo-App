@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import {List} from "@chakra-ui/core";
+import React, { Component } from "react";
+import { List } from "@chakra-ui/core";
 
 export default class TaskList extends Component {
     constructor(props) {
@@ -9,7 +9,7 @@ export default class TaskList extends Component {
 
     render() {
         return (
-            <List spacing={3} px="0">
+            <List spacing={3} px="0" textAlign="left">
                 {this.state.tasks}
             </List>
         );
