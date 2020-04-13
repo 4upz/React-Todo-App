@@ -9,10 +9,22 @@ export default class Task extends Component {
             taskName: props.taskName, // The name of this task
             isCompleted: false, // Whether the current task has been marked as completed
         };
+        this.toggleCompletion = this.toggleCompletion.bind(this);
     }
+
+    toggleCompletion() {
+        this.setState({ isCompleted: !this.state.isCompleted });
+    }
+
     render() {
         return (
-            <Checkbox variantColor="blue" size="lg" borderColor="gray.300">
+            <Checkbox
+                onChange={this.toggleCompletion}
+                variantColor="blue"
+                size="lg"
+                borderColor="gray.300"
+                className={this.state.isCompleted &&  "CompletedTask"}
+            >
                 {this.state.taskName}
             </Checkbox>
         );

@@ -52,6 +52,7 @@ export default class TaskEntry extends Component {
                     borderColor="gray.300"
                     placeholder="What's do you need to do?"
                     aria-describedby="task-entry-help"
+                    maxLength="32"
                 />
             </FormControl>
         );

@@ -9,7 +9,7 @@ export default class TaskList extends Component {
 
     render() {
         return (
-            <List spacing={3} px="0" textAlign="left">
+            <List spacing={3} px="0" width="80%" mx="auto" textAlign="left">
                 {this.state.tasks}
             </List>
         );

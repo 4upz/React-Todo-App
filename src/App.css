@@ -23,3 +23,8 @@ body {
     width: 100%;
     color: white;
 }
+
+.CompletedTask {
+    text-decoration: line-through;
+    color: #A0AEC0;
+}
