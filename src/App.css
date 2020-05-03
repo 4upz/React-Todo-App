@@ -14,16 +14,6 @@ body {
     left: -5%;
 }
 
-.Footer {
-    /* background-color: #CBD5E0; */
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    color: white;
-}
-
 .CompletedTask {
     text-decoration: line-through;
     color: #A0AEC0;

@@ -23,7 +23,7 @@ export default class Task extends Component {
                 variantColor="blue"
                 size="lg"
                 borderColor="gray.300"
-                className={this.state.isCompleted &&  "CompletedTask"}
+                className={this.state.isCompleted && "CompletedTask"}
             >
                 {this.state.taskName}
             </Checkbox>

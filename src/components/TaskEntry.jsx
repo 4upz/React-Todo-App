@@ -50,7 +50,7 @@ export default class TaskEntry extends Component {
                     textAlign="center"
                     id="task-entry"
                     borderColor="gray.300"
-                    placeholder="What's do you need to do?"
+                    placeholder="What do you need to do?"
                     aria-describedby="task-entry-help"
                     maxLength="32"
                 />
